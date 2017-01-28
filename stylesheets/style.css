@@ -1,0 +1,54 @@
+/* Customized CSS */
+/* By C.Kohler    */
+
+/* Default main Page */
+  
+body {
+	font-family: "Raleway", Arial, sans-serif;
+	font-size: 18px;
+	margin:0;
+    background: url(../pictures/bg/children.jpeg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+ /* Navigation */
+ 
+.navbar-custom {
+	background-color: rgba(255, 255, 255, 0.77);
+	border-bottom: 1px dashed #AB302C;
+	height: 10px;
+}
+
+.navlogo {
+	width: 160px;
+	position: absolute;
+	top: 10px;
+}
+
+/*Menübar Link */
+.navbar-custom .navbar-link > li > a:link, .navbar-custom .navbar-link > li > a:visited {
+	color: #AB302C;
+}
+.navbar-custom .navbar-link > li > a:hover {
+	color: #606060;
+}
+
+/* StartPage */
+.mainlogo{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: -50%; bottom: -50%;
+    left: -50%; right: -50%;
+    margin: auto;
+}
+.startmenu {
+	width: 50%;
+	margin: 60% auto;
+	text-align: center;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HEMA TestSeite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Test -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+	<section ng-app="hemaapp" ng-controller="nav as nav">
+
+<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-custom" ng-show="nav.BarsEnable()">
+		  <div class="container-fluid"  >
+		    <div class="navbar-header navbar-headlink">
+			      <img src="pictures/logo/LogoWidth.png" class="navlogo">
+		    </div>
+		    <div>
+		      <ul class="nav navbar-nav navbar-right navbar-link">
+		        <li ng-class="{ active: nav.isSelected(1) }">
+		        	<a href ng-click="nav.selCont(1)">Projekte</a>
+		        </li>
+
+		        <li ng-class="{ active: nav.isSelected(2) }"><a href data-toggle="dropdown">Programme<span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li><a href="#" ng-click="nav.selCont(21)">Gesundheit und Hygiene</a></li>
+			          <li><a href="#" ng-click="nav.selCont(22)">B&auml;ume pflanzen</a></li>
+			          <li><a href="#" ng-click="nav.selCont(24)">Sauberes Trinkwasser</a></li>
+			          <li><a href="#" ng-click="nav.selCont(25)">Geimeinschaftsgarten</a></li>
+			          <li><a href="#" ng-click="nav.selCont(26)">Unterricht auf den Feldern</a></li>
+					  <li><a href="#" ng-click="nav.selCont(27)">Landwirtschaftsger&auml;te</a></li>
+			        </ul>
+			    <li>
+		        <!--
+		        <li ng-class="{ active: nav.isSelected(3) }">
+		        	<a href ng-click="nav.selCont(3)">Bilder</a>
+		        </li>
+		        -->
+		        <li ng-class="{ active: nav.isSelected(4) }">
+		        	<a href ng-click="nav.selCont(4)">Spenden</a>
+		        </li>
+		        <li ng-class="{ active: nav.isSelected(5) }">
+		        	<a href ng-click="nav.selCont(5)">Kontakt</a>
+		        </li>
+		        <!--
+			        <li ng-class="{ active: nav.isSelected(6) }">
+		        	<a href ng-click="nav.selCont(6)">Shop</a>
+		        -->
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		
+
+<!-- Test 	<div ng-include="nav.cont()"></div> -->
+			
+<!--Projektbeschreibe -->
+		<div class="container-fluid" ng-show="nav.isSelected(1)">
+			<div ng-include="'html/projektbeschreib.html'"></div>
+		</div>
+
+<!--Programme -->
+		<div class="container-fluid" ng-show="nav.isSelected(21)">
+			<div ng-include="'html/programme/gesundheit_hygienne.html'"></div>
+		</div>
+		<div class="container-fluid" ng-show="nav.isSelected(22)">
+			<div ng-include="'html/programme/baume_pflanzen.html'"></div>
+		</div>
+		<div class="container-fluid" ng-show="nav.isSelected(24)">
+			<div ng-include="'html/programme/trinkwasser.html'"></div>
+		</div>
+		<div class="container-fluid" ng-show="nav.isSelected(25)">
+			<div ng-include="'html/programme/gemeinschaftsgarten.html'"></div>
+		</div>
+		<div class="container-fluid" ng-show="nav.isSelected(26)">
+			<div ng-include="'html/programme/unterricht_feld.html'"></div>
+		</div>
+		<div class="container-fluid" ng-show="nav.isSelected(27)">
+			<div ng-include="'html/programme/landwirtschaftsgeraete.html'"></div>
+		</div>		
+
+<!--Bildergalerie -->
+		<div class="container-fluid" ng-show="nav.isSelected(3)">
+		</div>
+
+<!--Spenden -->
+		<div class="container-fluid" ng-show="nav.isSelected(4)">
+			<div ng-include="'html/spenden.html'"></div>
+		</div>
+
+
+<!--Kontakt-->
+		<div class="container-fluid" ng-show="nav.isSelected(5)">
+			<div ng-include="'html/kontakt.html'"></div>
+		</div>
+
+<!--Shop -->
+		<div class="container-fluid" ng-show="nav.isSelected(6)">
+			<p>Shop</p>
+		</div>
+
+
+	</section>
+
+
+    <!-- JavaScript Frameworks -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<!--Include JavaScripts -->
+	<script src="javascripts/ldcon.js" type="text/javascript"></script>
+  </body>
+</html>
