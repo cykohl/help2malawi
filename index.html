@@ -33,77 +33,22 @@
 					  <li><a href="#" ng-click="nav.selCont(27)">Landwirtschaftsger&auml;te</a></li>
 			        </ul>
 			    <li>
-		        <!--
-		        <li ng-class="{ active: nav.isSelected(3) }">
-		        	<a href ng-click="nav.selCont(3)">Bilder</a>
-		        </li>
-		        -->
+			    
 		        <li ng-class="{ active: nav.isSelected(4) }">
 		        	<a href ng-click="nav.selCont(4)">Spenden</a>
 		        </li>
 		        <li ng-class="{ active: nav.isSelected(5) }">
 		        	<a href ng-click="nav.selCont(5)">Kontakt</a>
 		        </li>
-		        <!--
-			        <li ng-class="{ active: nav.isSelected(6) }">
-		        	<a href ng-click="nav.selCont(6)">Shop</a>
-		        -->
-		        </li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
-		
-
-<!-- Test 	<div ng-include="nav.cont()"></div> -->
-			
-<!--Projektbeschreibe -->
-		<div class="container-fluid" ng-show="nav.isSelected(1)">
-			<div ng-include="'html/projektbeschreib.html'"></div>
-		</div>
-
-<!--Programme -->
-		<div class="container-fluid" ng-show="nav.isSelected(21)">
-			<div ng-include="'html/programme/gesundheit_hygienne.html'"></div>
-		</div>
-		<div class="container-fluid" ng-show="nav.isSelected(22)">
-			<div ng-include="'html/programme/baume_pflanzen.html'"></div>
-		</div>
-		<div class="container-fluid" ng-show="nav.isSelected(24)">
-			<div ng-include="'html/programme/trinkwasser.html'"></div>
-		</div>
-		<div class="container-fluid" ng-show="nav.isSelected(25)">
-			<div ng-include="'html/programme/gemeinschaftsgarten.html'"></div>
-		</div>
-		<div class="container-fluid" ng-show="nav.isSelected(26)">
-			<div ng-include="'html/programme/unterricht_feld.html'"></div>
-		</div>
-		<div class="container-fluid" ng-show="nav.isSelected(27)">
-			<div ng-include="'html/programme/landwirtschaftsgeraete.html'"></div>
-		</div>		
-
-<!--Bildergalerie -->
-		<div class="container-fluid" ng-show="nav.isSelected(3)">
-		</div>
-
-<!--Spenden -->
-		<div class="container-fluid" ng-show="nav.isSelected(4)">
-			<div ng-include="'html/spenden.html'"></div>
-		</div>
-
-
-<!--Kontakt-->
-		<div class="container-fluid" ng-show="nav.isSelected(5)">
-			<div ng-include="'html/kontakt.html'"></div>
-		</div>
-
-<!--Shop -->
-		<div class="container-fluid" ng-show="nav.isSelected(6)">
-			<p>Shop</p>
-		</div>
-
-
 	</section>
+	
+<!--Content -->
+	<div id="content">
+	</div>
 
 
     <!-- JavaScript Frameworks -->

@@ -19,8 +19,7 @@ app.controller('nav', function() {
 		}
 	}
 
-/*	
-	this.include = "html/kontakt.html";
+
 	
 	this.cont = function() {
 		switch (this.cont) {
@@ -30,6 +29,3 @@ app.controller('nav', function() {
 		}
 		return this.include;
 	}
-*/
-
-});
